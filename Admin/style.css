@@ -1,0 +1,44 @@
+body{
+  background-image: url("lion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+.menubar{
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menubar a{
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 20px 50px;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.menubar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.content{
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  padding-top: 100px;
+  background-color: none;
+}
+
+.content h2{
+  font-size: 50px;
+  color: #2dd2e8;
+  font-family: 'Limelight', cursive;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #000;
+}

@@ -1,0 +1,163 @@
+<?php
+
+  session_start();
+
+  if(!isset($_SESSION['username']))
+  {
+    header('location:index.php');
+  }
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+
+        <title>Incredible Gujarat</title>
+        <link rel="icon" type="image/icon type" href="logo.png">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/aos.css">
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="css/jquery.timepicker.css">    
+        <link rel="stylesheet" href="css/flaticon.css">
+        <link rel="stylesheet" href="css/icomoon.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <style type="text/css">
+
+            img{
+                border-radius: 20px;
+            }
+
+            img:hover{
+                transform: scale(1.5, 1.5);
+                transition: 0.01s transform;
+                cursor: pointer;
+                border-radius: 20px;
+            }
+
+            *{
+              margin: 0; padding: 0;
+              box-sizing: border-box;
+              font-family: 'Josefin Sans', sans-serif;
+            }
+
+            body{
+              width: 100%;
+              height: 100vh;
+              background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url(.jpg);
+              background-size: cover; background-repeat: no-repeat;
+              background-color: grey;
+            }
+
+            main{
+              width: 100%;
+              height: 80vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center; 
+            }
+
+            main h1{
+              width: 100%;
+              position: absolute;
+              top: 35%; left: 50%;
+              transform: translate(-50%, -50%);
+              text-transform: uppercase;
+              font-size: 3em;
+            }
+
+            main p{
+              width: 100%;
+              position: absolute;
+              top: 60%; left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 20px;
+            }
+
+            .submain{
+              width: 70%;
+              height: 60vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center; 
+              background-color: #fff;
+            }
+
+        </style>
+      
+    </head>
+  
+    <body>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	       <div class="container">
+	           <a class="navbar-brand" href="index 1.php"><img src="logo.png" height="120px" width="120px"></a>
+	           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	               <span class="oi oi-menu"></span> Menu
+	           </button>
+
+               <div class="collapse navbar-collapse" id="ftco-nav">
+
+                   <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index 1.php" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="category 1.php" class="nav-link">Places</a></li>
+                        <li class="nav-item"><a href="gallery 1.php" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="contact 1.php" class="nav-link">Contact Us</a></li>
+                        <li class="nav-item active"><a href="about 1.php" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="feedback 1.php" class="nav-link">Feedback</a></li>
+                        <li class="nav-item active"><a class="nav-link"> <?php echo "Hello ".$_SESSION['username']; ?> </a></li>
+                        <li class="nav-item"><a href="logout.php" class="nav-link">Logout</a></li>
+                   </ul>
+
+              </div>
+            </div>
+        </nav>
+    
+        <main>
+        
+            <h1>Our project is on Gujarat Tourism</h1><br>
+            
+            <div class="submain">
+            
+                <p>We have divided all tourist places of Gujarat into 7 categories: Holy Places,<br> Historical Legacies (Heritage Places), Stunning Oceanfronts (Beaches),<br> Essence of Biosphere and Fauna (Zoo, National parks, etc.),<br>Incredible Treasuries (Museums), Special Attractions and Beautiful Cities.<br>We have provided information, photos, how to reach, near by places and near by hotels of particular places.<br>We also have provided login and registration facility to user.<br>User can also give feedback of our website and also give comments about places.</p>
+            </div>
+  
+        </main>
+  
+        <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-migrate-3.0.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/jquery.animateNumber.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/jquery.timepicker.min.js"></script>
+        <script src="js/scrollax.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+        <script src="js/google-map.js"></script>
+        <script src="js/main.js"></script>
+    
+    </body>
+    
+</html>

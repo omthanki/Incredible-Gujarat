@@ -1,0 +1,26 @@
+table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  min-width: 400px;
+  border: 3px solid #ef8a00;
+  text-align: center;
+  width: 100%;
+}
+
+th{
+  background-color: #ef8a00;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 15px;
+}
+
+tr{
+  background-color: #fff;
+  color: #ef8a00;
+  font-weight: bold;
+}
+
+td{
+  padding: 12px 15px;
+}
